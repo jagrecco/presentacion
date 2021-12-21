@@ -1,0 +1,2121 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* ------------------------------ ESTILOS HEADER -------------- */ 
+.header{ 
+
+    background-color: #574c46;
+    opacity: .9;
+    display: grid;
+    width: 100vw;
+    height: 25vh;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+.header__logo{
+    width: 12rem;
+    margin-left: 8rem;
+}
+.header__menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 8rem;
+}
+.header__lista{
+    display: flex;
+
+}
+
+.header__item{
+    list-style: none;
+    border: 4px solid #574c46;
+}
+
+.header__item a{
+    margin: 0rem ;
+    padding: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: snow;
+}
+
+.header__item:hover{
+    border: 4px solid rgb(255 215 82);
+    border-radius: 10%;
+}
+    /* -------------------------------  / ESTILOS HEADER -------------- */ 
+
+    /* -------------------------------  ESTILOS HERO SECC -------------- */ 
+
+    .main__contenido{
+        
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: auto;
+        grid-template-areas:"hero hero hero"
+                            "nosotros nosotros nosotros"
+                            "tarjeta1 tarjeta2 tarjeta3";
+    }
+    
+    .main__article{
+        position: relative;
+        height: 80vh;
+        overflow: hidden;
+        /*background-image: url(../assets/fondo_hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;*/
+        grid-area: hero;
+    }
+
+    .heroContenedor{
+        position: relative;
+        display: inline-block;
+        top: 10rem;
+        left: 20rem;
+        z-index: 100;
+
+    }
+
+    .heroImagen{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .heroImagen img{
+        width: 100%;
+        opacity: .8;
+    }
+    
+    .main__article--tituloGrande{
+        font-size: 7rem;
+        color: #4a4c55;
+        font-weight: 300;
+        background-color: #c6c3c3;
+        opacity: .7;
+
+    }
+    
+    .main__article--bajada{
+        font-size: 5rem;
+        color: rgb(241 108 26);
+    }
+    
+    .main__hero--boton{
+        display: inline-block;
+        background-color: rgb(231, 202, 243);
+        padding: 1rem 3rem;
+        margin-top: 2rem;
+        text-decoration: none;
+        font-size: 2rem;
+    }
+
+    .main__hero--boton:hover{
+        border: 2px solid rgb(76, 6, 143);
+        border-radius: 6%;
+    }
+
+ /* -------------------------------  / ESTILOS HERO SECC -------------- */ 
+
+ /* ----------------------------- ESTILOS NOSOTROS VISTA INDEX -------------------- */
+ .main__nosotros{
+    display: flex;
+    background-color: #f1e9f1;
+    grid-area: nosotros;
+    width: 100%;
+    padding: 6rem 0;
+ }
+
+ .main__nosotros--tituloMenor{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.main__nosotros--txt{
+    width: 50%;
+    font-size: 1.5rem;
+    padding: 4rem 5rem;
+    text-align: justify;
+}
+
+.main__nosotros--img{
+ width: 50%;
+ height: auto;
+}
+
+.main__nosotros--img img{
+    width: 100%;
+}
+
+
+/* ----------------------------- / ESTILOS NOSOTROS VISTA INDEX -------------------- */
+
+/* ------------------------------ CONTENEDOR TARJETAS VISTA INDEX ----------------- */
+
+.main__tarjeta1{
+    grid-area: tarjeta1;
+}
+.main__tarjeta2{
+    grid-area: tarjeta2;
+}
+.main__tarjeta3{
+    grid-area: tarjeta3;
+}
+
+.main__tarjeta1, .main__tarjeta2, .main__tarjeta3{
+    padding: 7rem 4rem;
+}
+
+.main__objetivos--tituloChico{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.main__presenta--img{
+    width: 100%;
+    height: auto;
+}
+
+.main__tarjeta--bajada{
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    text-align: justify;
+}
+
+/* ------------------------------ / CONTENEDOR TARJETAS VISTA INDEX  ----------------- */
+
+
+/* ------------------------------  VISTA NOSOTROS  ----------------- */
+.main__profes{
+    padding: 4rem 0;
+}
+
+.main__institucion{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas:"nos nos"
+                        "imagen imagen"
+                        "profes profes"
+                        "instalacion instalacion";
+    background-color: #f1e9f1;
+    
+}
+
+.main__institucion--txt{
+    grid-area: nos;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 9rem 5rem 0;
+    text-align: justify;    
+}
+
+.main__institucion--prof{
+    grid-area: profes;
+    padding: 6rem 5rem;
+}
+
+.nosotros__h2{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.main__institucion__bajada{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-align: justify;
+    line-height: 150%;
+}
+
+.main__institucion--img{
+    grid-area: imagen;
+    padding: 0rem 0rem;
+    opacity: .94;
+    overflow: hidden;
+}
+
+.main__institucion--img img{
+    width: 100%;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* -------------------- INSTALACIONES VISTA NOSOTROS ------------------*/
+.main__instalaciones{
+    grid-area: instalacion;
+    padding: 3rem 5rem;
+    background-color: #ebe1a9;
+}
+
+.instalaciones__contenedor{
+    display: flex;
+}
+
+.main__instalaciones--izq{
+    width: 50%;
+    display: flex;
+}
+
+.main__instalaciones--der{
+    width: 50%;
+    display: flex;
+}
+
+.instalaciones__txt{
+    width: 50%;
+    padding: 1rem;
+}
+
+.instalaciones__img{    
+    padding: 1rem;
+}
+
+.instalaciones__img img{
+    width: 90%;
+    margin: 2rem 0 0 2rem;
+}
+
+/* ------------------------------ VISTA JARDIN DE INFANTES  ------------------------------ */
+
+.main__jardin--general{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto;
+    grid-template-areas:"jardinTxt jardinTxt jardinTxt"
+                        "jardinImg jardinImg jardinImg"
+                        "organizaTxt organizaTxt organizaImg"
+                        "particularTxt particularTxt particularImg";
+    row-gap: 4rem;
+}
+
+.main__jardin{
+    grid-area: jardinTxt;
+    padding: 4rem 0;
+    background-color: #e7d9c7;
+}
+
+.main__jardin--txt{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 4rem 5rem;
+    text-align: justify;
+}
+
+
+.main__jardin--titulo{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.main__jardin--bajada{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-align: justify;
+}
+
+.main__jardin--galeria{
+    grid-area: jardinImg;
+    display: flex;
+}
+
+.main__jardin--organiza{  /*  ---------------   JARDIN ORGANIZACION ------------------*/
+    grid-area: organizaTxt;
+    width: 100%;
+    padding: 6rem 0;
+    background-color: #dbebdb;
+}
+
+.main__jardin--txt2{ 
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0 5rem;
+    text-align: justify;
+}
+
+.main__jardin--txt2 h2{
+    margin-bottom: 3rem;
+}
+
+.main__jardin--txt2 p{
+    padding: 2rem;
+}
+
+.main__jardin--img{
+    grid-area: organizaImg;
+    width: 100%;
+    
+}
+
+.main__jardin--img img{
+    width: 100%;
+    margin: 0;
+}
+
+/* -------------------------------------- JARDIN PARTICULARIDADES ------------- */
+.main__particularidades{
+    grid-area: particularTxt;
+    width: 100%;
+    padding: 4rem 0 0 0;
+}
+
+.main__particularidades--txt{
+    
+    font-size: 1.5rem;
+    padding: 0 8rem;
+    text-align: justify;
+}
+
+.main__particularidades--txt h2{
+    margin-bottom: 3rem;
+}
+
+.main__particularidades--txt p{
+    padding: 2rem 0;
+}
+
+.main__particularidades--img{
+    grid-area: particularImg;
+    width: 100%;
+}
+
+.main__particularidades--img img{
+    width: 90%;
+    padding: 2rem 0;
+}
+
+/* ------------------------------ / VISTA JARDIN DE INFANTES  ------------------------------ */
+
+
+/* --------------------------------- VISTA PRIMARIO --------------------------------------*/
+
+.main__primaria{
+    display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto;
+        grid-template-areas:"principal principal principal "
+                            "orga orga orga"
+                            "proyecto proyecto proyecto"
+                            "idiomas idiomas idiomas";
+}
+
+.main__primario--principal{
+    grid-area: principal;
+}
+
+.main__primario--organizacion, .main__primario--idioma{
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 0;
+    grid-area: orga;
+}
+
+.main__primario--idioma{
+    grid-area: idiomas;
+}
+
+.main__primario--txt{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0 4rem;
+    text-align: justify;
+}
+
+.main__primario--txt h2{
+    margin-bottom: 2rem;
+}
+
+.main__primario--txt p{
+    padding: 3rem 0;
+}
+
+.main__primario--img{
+    width: 100%;
+}
+
+.main__primario--img img{
+    width: 100%;
+    padding: 0rem 0;
+}
+
+.primario__idiomas{
+    background-color: #e7d9c7;
+}
+
+/* --------------------------------- / PAGINA PRIMARIO --------------------------------------*/
+
+/* --------------------------------  ESTILOS SECUNDARIO -------------------------------------*/
+
+.main__presentaSecu{
+    padding: 10rem 0;
+}
+
+.main__presentaSecu h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding: 0  8rem;
+    text-align: center;
+}
+
+.main__presentaSecu p{
+    font-size: 1.5rem;
+    padding: 3rem 8rem;
+    text-align: justify;
+}
+
+.main__presentaSecu--img{
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.main__presentaSecu img{
+    width: 100%;
+    height: auto;
+}
+
+.main__detalleSecu{
+    display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto;
+        grid-template-areas:"examen examen"
+                            "orientacion orientacion"
+                            "areaIdioma areaIdioma";
+}
+
+.main__examenesSecu{
+    grid-area: examen;
+    padding: 10rem 0;
+    background-color: #e9d4d4;
+}
+
+.main__examenesSecu h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding: 0  8rem;
+    text-align: center;
+}
+
+.main__examenesSecu p{
+    font-size: 1.5rem;
+    padding: 3rem 8rem;
+    text-align: justify;
+}
+
+.main__orientacionSecu{
+    grid-area: orientacion;
+    display: flex;
+    padding: 10rem 0;
+    background-color: #d8e9f9;
+}
+
+.main__orientacionSecu--txt{
+    width: 100%;
+}
+
+.main__orientacionSecu--img{
+    width: 100%;
+}
+
+.main__orientacionSecu--img img{
+    width: 100%;
+}
+
+.main__orientacionSecu h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding: 0  8rem;
+}
+
+.main__orientacionSecu p{
+    font-size: 1.5rem;
+    padding: 3rem 8rem;
+    text-align: justify;
+}
+
+.main__idiomasSecu{
+    grid-area: areaIdioma;
+    display: flex;
+    padding: 10rem 0;
+    background-color: #ffe1ee;
+}
+
+.main__idiomasSecu--txt{
+    width: 100%;
+}
+
+.main__idiomasSecu--img{
+    width: 100%;
+}
+
+.main__idiomasSecu--img img{
+    width: 100%;
+
+}
+
+.main__idiomasSecu h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding: 0  8rem;
+}
+
+.main__idiomasSecu p{
+    font-size: 1.5rem;
+    padding: 3rem 8rem;
+    text-align: justify;
+}
+
+/* ------------------------------------------------------------------------------------------*/
+
+
+/* ----------------------- ESTILOS COMUNIDAD -----------------------------------------------*/
+
+.main__comunidad{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+    grid-template-areas:"presenta presenta"
+                        "novedad novedad";
+}
+
+.main__comunidad--presenta{
+    grid-area: presenta;
+    padding: 9rem 8rem;
+}
+
+.main__comunidad--presenta h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    padding: 0  8rem;
+    text-align: center;
+}
+
+.main__comunidad--presenta p{
+    font-size: 1.5rem;
+    padding: 1.5rem 8rem;
+    text-align: justify;
+}
+
+.main__comunidad--novedades{
+    grid-area: novedad;
+    padding: 1.5rem 0 0 0;
+}
+
+.novedades__general{
+    display: flex;
+    padding: 4rem 8rem;
+}
+
+.comunidad__novedad--txt{
+    width: 70vw;
+    padding: 0 8rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.comunidad__novedad--txt h3{
+    font-size: 2rem;
+    padding: 0 0 1rem 0;
+}
+.comunidad__novedad--txt p{
+    padding: 1rem 0;
+}
+
+.comunidad__novedad--img{
+    width: 30vw;
+    padding-left: 8rem;
+}
+
+.comunidad__novedad--img img{
+    width: 100%;
+}
+
+.comunidad__novedad2, .comunidad__novedad4, .comunidad__novedad6 {
+    background-color: #e1f5d9;
+}
+.comunidad__novedad1, .comunidad__novedad3, .comunidad__novedad5 {
+    background-color: #d0eec3;
+}
+/* -----------------------    /  ESTILOS COMUNIDAD -----------------------------------------------*/
+
+/* -------------------------- ESTILOS FORMULARIO CONTACTO --------------------------------------- */
+
+.main__form{
+    padding: 4rem 0 0;
+    background-color: rgb(200, 223, 223);
+}
+
+.main__formulario--leyenda{
+    display: none;
+}
+
+
+.main__formulario{
+    width: 100%;
+    margin: auto;
+    padding: 4rem 0;
+    background-color: rgb(211, 235, 235);
+}
+
+.main__f{
+    border: 0px;
+    padding: 0 8rem;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.main__formulario--campo label, input{
+    font-size: 2rem;
+    display: block;
+    padding: 1rem 1rem;
+    width: 40vw;
+}
+
+.main__formulario--interes label, select{
+    font-size: 2rem;
+    display: block;
+    padding: 1rem 1rem;
+    width: 30vw;
+}
+
+.main__presentaContacto{
+    padding: 3rem 0 2rem;
+}
+
+.main__presentaContacto h2{
+    font-size: 3rem;    
+    text-align: center;
+}
+
+.main__presentaContacto p{
+    text-align: center;
+    padding: 1rem 0 0 0;
+    font-size: 2rem;
+}
+
+.main__form--boton{
+    padding: 1rem;
+    font-size: 2rem;
+    display: inline-block;
+    width: 200px;
+}
+
+.main__formulario--mail textarea, label{
+    padding: 1rem;
+    font-size: 2rem;
+    width: 60vw;
+}
+
+/* -----------------------------------------------------------------------------------------------*/
+
+
+/* ------------------------------ FOOTER  ------------------------------ */
+.footer__contenedor{
+    
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto;
+    grid-template-areas:"redes logo ubicacion";
+    background-color: rgb(211, 205, 205);
+
+    align-items: center;
+    justify-items: center;
+}
+
+.contenedor__redes--flex{
+    grid-area: redes;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bi{
+    width: 50px;
+    height: 50px;
+}
+
+.footer__logo {
+    grid-area: logo;
+}
+
+.footer__logo img{
+    width: 14rem;
+}
+
+.footer__ubicacion{
+    grid-area: ubicacion;
+    width: 100%;
+}
+
+.footer__dir{
+    font-size: 2rem;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.footer__copy{
+    font-size: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* ------------------------------ / FOOTER  ------------------------------ */
+
+
+/* ------------------------  MERDIA QUERIES ------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 480px){   /* ------- Teléfono ------*/
+    
+/* ---------------- HEADER Y FOOTER TODAS LAS VISTAS --------------------*/ 
+    .header{
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-items: center;
+        height: 25vh;
+    }
+
+    .header__logo{
+        margin: 0;
+        padding: 2rem 0;
+        width: 8rem;
+    }
+
+    .header__menu{
+        justify-content: center;
+        margin-right: 0rem;
+    }
+
+    .header__item{
+        justify-self: center;
+    }
+    .header__item a{
+        padding: .3rem;    
+        font-size: .7rem;
+    }
+    /* --------------   FOOTER ----------------*/
+    .footer__contenedor{
+    
+        grid-template-columns: 100%;
+        grid-template-areas:"logo logo logo"
+                            "redes redes redes"
+                            "ubicacion ubicacion ubicacion";
+    }
+    .footer__logo img{
+        width: 8rem;
+        margin: 4rem 0;
+    }
+
+    .bi{
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer__dir{
+        font-size: 1rem;
+        padding: 1rem 0 4rem;
+        text-align: center;
+    }
+/* ---------------- HEADER Y FOOTER TODAS LAS VISTAS --------------------*/ 
+
+/* --------------------  HERO VISTA INDEX ------------------------------*/
+
+.main__contenido{
+    grid-template-areas:"hero hero hero"
+                        "nosotros nosotros nosotros"
+                        "tarjeta1 tarjeta1 tarjeta1"
+                        "tarjeta2 tarjeta2 tarjeta2"
+                        "tarjeta3 tarjeta3 tarjeta3";
+}
+.main__article{
+    height: 33vh;
+}
+.heroContenedor{
+    top: 2rem;
+    left: 2rem;
+    z-index: 100;
+}
+.main__article--tituloGrande{
+    font-size: 4rem;
+
+}
+.main__article--bajada{
+    font-size: 2rem;
+}
+
+.main__hero--boton{    
+    padding: .5rem 2rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.main__hero--boton:hover{
+    border: 1px solid rgb(76, 6, 143);
+    border-radius: 3%;
+}
+/*---------------------  / HERO VISTA INDEX -----------------------------*/
+
+/* -------------------- NOSOTROS VISTA INDEX --------------------------- */
+.main__nosotros{
+    grid-template-columns: 100%;
+    display: block;
+    padding: 2rem 0;
+ }
+.main__nosotros--txt{
+    width: 100%;
+    font-size: 1rem;
+    padding: 2rem 2rem;
+}
+
+.main__nosotros--img{
+ width: 100%;
+ height: auto;
+}
+/* -------------------- / NOSOTROS VISTA INDEX --------------------------- */
+.main__institucion__bajada{
+    font-size: 1rem;
+    padding: 1rem 0;
+    text-align: justify;
+    line-height: 150%;
+}
+/* -------------------- TARJETAS VISTA INDEX --------------------------- */
+.main__tarjeta1, .main__tarjeta2, .main__tarjeta3 {
+    padding: 2rem 0rem;
+}
+
+.main__objetivos--tituloChico{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.main__presenta--img{
+    width: 100%;
+    height: auto;
+}
+
+.main__tarjeta--bajada{
+    font-size: 1.3rem;
+    padding: 2rem 2rem;
+    text-align: justify;
+}
+/* -------------------- / TARJETAS VISTA INDEX --------------------------- */
+
+/* ---------------------------  VISTA NOSOTROS ------------------------------------ */
+
+.main__institucion--txt{
+    padding: 5rem 3rem 0;
+}
+
+.main__institucion--prof{
+    grid-area: profes;
+    padding: 4rem 3rem 0rem;
+}
+
+.nosotros__h2{
+    margin-bottom: 1rem;
+}
+
+.main__instalaciones{
+    padding: 3rem 3rem;
+}
+.instalaciones__contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+.main__instalaciones--izq{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__instalaciones--der{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.instalaciones__txt{
+    width: 100%;
+    padding: 0rem;
+}
+
+.instalaciones__img{    
+    padding: 0;
+    width: 100%;
+}
+
+.instalaciones__img img{
+    margin: 0;
+    width: 100%;    
+}
+/*---------------------------------------------------------------------------------*/
+
+/* ----------------------------- VISTA JARDIN -------------------------------------*/
+
+.main__jardin--general{
+    
+    grid-template-areas:"jardinTxt jardinTxt jardinTxt"
+                        "jardinImg jardinImg jardinImg"
+                        "organizaTxt organizaTxt organizaTxt"
+                        "organizaImg organizaImg organizaImg"
+                        "particularTxt particularTxt particularTxt"
+                        "particularImg particularImg particularImg";
+    row-gap: 0rem;
+}
+
+.main__jardin{
+    padding: 2rem 0;
+}
+
+.main__jardin--txt{
+    font-size: 1rem;
+    padding: 2rem 3rem;
+    text-align: justify;
+}
+
+.main__jardin--titulo{
+    margin-bottom: 1rem;
+}
+
+.main__jardin--bajada{
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.main__jardin--galeria{
+    display: flex;
+    flex-direction: column;
+}
+
+.main__jardin--txt2{ 
+    padding: 1rem 2rem;
+}
+
+.main__jardin--txt2 h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.main__jardin--txt2 p{
+    padding: 1rem 2rem;
+}
+
+.main__particularidades--txt{   
+    padding: 0 4rem 2rem;
+}
+
+.main__particularidades--txt h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.main__particularidades--txt p{
+    font-size: 1rem;
+    line-height: 120%;
+    padding: 2rem 0 0;
+}
+
+.main__particularidades--img img{
+    width: 100%;
+    padding: 0rem 0 0;
+}
+
+/* ----------------------------- / VISTA JARDIN ----------------------------------*/
+
+/* ------------------------------  VISTA PRIMARIA --------------------------------*/
+
+.main__primario--organizacion{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+
+.main__primario--idioma{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0;
+}
+
+.main__primario--txt{
+    padding: 2rem 4rem;
+    text-align: justify;
+}
+
+.main__primario--txt h2{
+    margin-bottom: 0rem;
+    text-align: center;
+}
+
+.main__primario--txt p{
+    padding: 1rem 0;
+    font-size: 1rem;
+    line-height: 120%;
+}
+/* ----------------------------- / VISTA PRIMARIA --------------------------------*/
+
+/* ----------------------------- VISTA SECUNDARIA --------------------------------*/
+.main__presentaSecu{
+    padding: 6rem 0 0;
+}
+
+.main__presentaSecu h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    padding: 0  4rem;
+    text-align: center;
+}
+
+.main__presentaSecu p{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    text-align: justify;
+}
+
+.main__presentaSecu--img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.main__presentaSecu--img img{
+    width: 100%;
+}
+
+.main__examenesSecu{
+    padding: 4rem 0;
+}
+
+.main__examenesSecu h2{
+    
+    margin-bottom: 2rem;
+    padding: 0  0rem;
+}
+
+.main__examenesSecu p{
+    font-size: 1rem;
+    padding: 2rem 2rem 1rem;
+}
+
+.main__orientacionSecu{
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__orientacionSecu--txt{
+    width: 100%;
+}
+
+.main__orientacionSecu--img{
+    width: 100%;
+}
+
+.main__orientacionSecu--img img{
+    width: 100%;
+}
+
+.main__orientacionSecu h2{
+    text-align: center;
+    padding: 0  2rem;
+}
+
+.main__orientacionSecu p{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    text-align: justify;
+}
+
+.main__idiomasSecu{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0 0;
+    background-color: #ffe1ee;
+}
+
+.main__idiomasSecu--txt{
+    width: 100%;
+}
+
+.main__idiomasSecu--img{
+    width: 100%;
+}
+
+.main__idiomasSecu--img img{
+    width: 100%;
+}
+
+.main__idiomasSecu h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0  4rem;
+}
+
+.main__idiomasSecu p{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    
+}
+/* ------------------------------ /VISTA SECUNDARIA ------------------------------*/
+
+/* ------------------------------ VISTA COMUNIDAD --------------------------------*/
+.main__comunidad--presenta{
+    padding: 4rem 0rem;
+}
+
+.main__comunidad--presenta h1{
+    margin-bottom: 1rem;
+    padding: 0rem  0rem;
+    font-size: 2rem;
+}
+
+.main__comunidad--presenta p{
+    font-size: 1rem;
+    padding: 1.5rem 2rem;
+}
+
+.novedades__general{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 4rem 2rem;
+}
+
+.comunidad__novedad--txt{
+    width: 100%;
+    padding: 0 0rem;
+    font-size: 1rem;
+}
+.comunidad__novedad--img{
+    width: 100%;
+    padding: 0rem;
+}
+
+.comunidad__novedad--img iframe{
+    width: 100%;
+    height: 250px;
+}
+
+.comunidad__novedad--txt h3{
+    font-size: 2rem;
+    padding: 1rem0 0 0rem 0;
+    text-align: left;
+}
+.comunidad__novedad--txt p{
+    padding: 1rem 0;
+}
+
+/* ------------------------------ /VISTA COMUNIDAD --------------------------------*/
+
+/* ------------------------------ VISTA CONTACTO ---------------------------------*/
+.main__form{
+    padding: 2rem 0 2rem;
+    background-color: rgb(200, 223, 223);
+}
+
+.main__presentaContacto h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.main__presentaContacto p{
+    padding: .5rem 0 0 0;
+    font-size: 1.5rem;
+}
+
+.main__formulario{
+    margin: auto;
+    padding: 2rem 0;
+    background-color: rgb(211, 235, 235);
+}
+
+.main__f{
+    padding: 0 .5rem;
+}
+
+.main__formulario--campo input{
+    width: 100%;
+}
+
+.main__formulario--interes label, select{
+
+    width: 100%;
+}
+
+.main__formulario--mail textarea, label, input{
+    width: 100%;
+}
+
+.main__form--boton{
+    
+    padding: 1rem 0rem;
+    width: 49%;
+}
+
+/* ------------------------------ /VISTA CONTACTO ---------------------------------*/
+
+}
+
+@media screen and (min-width: 481px) and (max-width:768px) {      /* ------- Tablet pequeña ------*/
+
+/* ---------------- HEADER Y FOOTER TODAS LAS VISTAS --------------------*/ 
+    .header{
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-items: center;
+        height: 25vh;
+    }
+
+    .header__logo{
+        margin: 0;
+        padding: 2rem 0;
+        width: 8rem;
+    }
+
+    .header__menu{
+        justify-content: center;
+        margin-right: 0rem;
+    }
+
+    .header__item{
+        justify-self: center;
+    }
+    .header__item a{
+        padding: .3rem;    
+        font-size: 1.3rem;
+    }
+    /* --------------   FOOTER ----------------*/
+    .footer__contenedor{
+    
+        grid-template-columns: 100%;
+        grid-template-areas:"logo logo logo"
+                            "redes redes redes"
+                            "ubicacion ubicacion ubicacion";
+    }
+    .footer__logo img{
+        width: 8rem;
+        margin: 4rem 0;
+    }
+
+    .bi{
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer__dir{
+        font-size: 1rem;
+        padding: 1rem 0 4rem;
+        text-align: center;
+    }
+/* ---------------- HEADER Y FOOTER TODAS LAS VISTAS --------------------*/ 
+
+/* --------------------  HERO VISTA INDEX ------------------------------*/
+
+.main__contenido{
+    grid-template-areas:"hero hero hero"
+                        "nosotros nosotros nosotros"
+                        "tarjeta1 tarjeta1 tarjeta1"
+                        "tarjeta2 tarjeta2 tarjeta2"
+                        "tarjeta3 tarjeta3 tarjeta3";
+}
+.main__article{
+    height: 42vh;
+}
+.heroContenedor{
+    top: 6rem;
+    left: 3rem;
+    z-index: 100;
+}
+.main__article--tituloGrande{
+    font-size: 4rem;
+
+}
+.main__article--bajada{
+    font-size: 2rem;
+}
+
+.main__hero--boton{    
+    padding: .5rem 2rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.main__hero--boton:hover{
+    border: 1px solid rgb(76, 6, 143);
+    border-radius: 3%;
+}
+/*---------------------  / HERO VISTA INDEX -----------------------------*/
+
+/* -------------------- NOSOTROS VISTA INDEX --------------------------- */
+.main__nosotros{
+    grid-template-columns: 100%;
+    display: block;
+    padding: 2rem 0;
+ }
+.main__nosotros--txt{
+    width: 100%;
+    font-size: 1rem;
+    padding: 2rem 2rem;
+}
+
+.main__nosotros--img{
+ width: 100%;
+ height: auto;
+}
+/* -------------------- / NOSOTROS VISTA INDEX --------------------------- */
+
+/* -------------------- TARJETAS VISTA INDEX --------------------------- */
+.main__tarjeta1, .main__tarjeta2, .main__tarjeta3 {
+    padding: 2rem 0rem;
+}
+
+.main__objetivos--tituloChico{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.main__presenta--img{
+    width: 100%;
+    height: auto;
+}
+
+.main__tarjeta--bajada{
+    font-size: 1.3rem;
+    padding: 2rem 2rem;
+    text-align: justify;
+}
+
+/* -------------------- / TARJETAS VISTA INDEX --------------------------- */
+
+/* ------------------- VISTA NOSOTROS -------------------------------------*/
+
+.main__instalaciones{
+    padding: 3rem 3rem;
+}
+.instalaciones__contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+.main__instalaciones--izq{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__instalaciones--der{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.instalaciones__txt{
+    width: 100%;
+    padding: 0rem;
+}
+
+.instalaciones__img{    
+    padding: 0;
+    width: 100%;
+}
+
+.instalaciones__img img{
+    margin: 1rem 0;
+    width: 100%;    
+}
+/* -------------------- / VISTA NOSOTROS ----------------------------------*/
+
+/* ----------------------------- VISTA JARDIN -------------------------------------*/
+
+.main__jardin--general{
+    
+    grid-template-areas:"jardinTxt jardinTxt jardinTxt"
+                        "jardinImg jardinImg jardinImg"
+                        "organizaTxt organizaTxt organizaTxt"
+                        "organizaImg organizaImg organizaImg"
+                        "particularTxt particularTxt particularTxt"
+                        "particularImg particularImg particularImg";
+    row-gap: 0rem;
+}
+
+.main__jardin{
+    padding: 2rem 0;
+}
+
+.main__jardin--txt{
+    font-size: 1rem;
+    padding: 2rem 3rem;
+    text-align: justify;
+}
+
+.main__jardin--titulo{
+    margin-bottom: 1rem;
+}
+
+.main__jardin--bajada{
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.main__jardin--galeria{
+    display: flex;
+}
+
+.main__jardin--txt2{ 
+    padding: 1rem 2rem;
+}
+
+.main__jardin--txt2 h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.main__jardin--txt2 p{
+    padding: 1rem 2rem;
+}
+
+.main__particularidades--txt{   
+    padding: 0 4rem 2rem;
+}
+
+.main__particularidades--txt h2{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.main__particularidades--txt p{
+    font-size: 1rem;
+    line-height: 120%;
+    padding: 2rem 0 0;
+}
+
+.main__particularidades--img{
+    display: flex;
+}
+
+.main__particularidades--img img{
+    width: 100%;
+    padding: 0rem 0 0;
+
+}
+
+/* ----------------------------- / VISTA JARDIN ----------------------------------*/
+
+/* ------------------------------  VISTA PRIMARIA --------------------------------*/
+
+.main__primario--organizacion{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+
+.main__primario--idioma{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0;
+}
+
+.main__primario--txt{
+    padding: 2rem 4rem;
+    text-align: justify;
+}
+
+.main__primario--txt h2{
+    margin-bottom: 0rem;
+    text-align: center;
+}
+
+.main__primario--txt p{
+    padding: 1rem 0;
+    font-size: 1rem;
+    line-height: 120%;
+}
+
+/* ----------------------------- / VISTA PRIMARIA --------------------------------*/
+
+/* ----------------------------- VISTA SECUNDARIA --------------------------------*/
+.main__presentaSecu{
+    padding: 6rem 0 0;
+}
+
+.main__presentaSecu h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    padding: 0  4rem;
+    text-align: center;
+}
+
+.main__presentaSecu p{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    text-align: justify;
+}
+
+.main__presentaSecu--img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.main__presentaSecu--img img{
+    width: 100%;
+}
+
+.main__examenesSecu{
+    padding: 4rem 0;
+}
+
+.main__examenesSecu h2{
+    
+    margin-bottom: 2rem;
+    padding: 0  0rem;
+}
+
+.main__examenesSecu p{
+    font-size: 1rem;
+    padding: 1rem 2rem 1rem;
+}
+
+.main__orientacionSecu{
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__orientacionSecu--txt{
+    width: 100%;
+}
+
+.main__orientacionSecu--img{
+    width: 100%;
+}
+
+.main__orientacionSecu--img img{
+    width: 100%;
+}
+
+.main__orientacionSecu h2{
+    text-align: center;
+    padding: 0  2rem;
+}
+
+.main__orientacionSecu p{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    text-align: justify;
+}
+
+.main__idiomasSecu{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0 0;
+    background-color: #ffe1ee;
+}
+
+.main__idiomasSecu--txt{
+    width: 100%;
+}
+
+.main__idiomasSecu--img{
+    width: 100%;
+}
+
+.main__idiomasSecu--img img{
+    width: 100%;
+}
+
+.main__idiomasSecu h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0  4rem;
+}
+
+.main__idiomasSecu p{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    
+}
+/* ------------------------------ /VISTA SECUNDARIA ------------------------------*/
+
+/* ------------------------------ VISTA COMUNIDAD --------------------------------*/
+.main__comunidad--presenta{
+    padding: 4rem 0rem;
+}
+
+.main__comunidad--presenta h1{
+    margin-bottom: 1rem;
+    padding: 0rem  0rem;
+    font-size: 2rem;
+}
+
+.main__comunidad--presenta p{
+    font-size: 1rem;
+    padding: 1.5rem 2rem;
+}
+
+.novedades__general{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 4rem 2rem;
+}
+
+.comunidad__novedad--txt{
+    width: 100%;
+    padding: 0 0rem;
+    font-size: 1rem;
+}
+.comunidad__novedad--img{
+    width: 100%;
+    padding: 0rem;
+}
+
+.comunidad__novedad--img iframe{
+    width: 100%;
+    height: 350px;
+}
+.comunidad__novedad--txt h3{
+    font-size: 2rem;
+    padding: 1rem0 0 0rem 0;
+    text-align: left;
+}
+.comunidad__novedad--txt p{
+    padding: 1rem 0;
+}
+
+/* ------------------------------ /VISTA COMUNIDAD --------------------------------*/
+
+/* ------------------------------ VISTA CONTACTO ---------------------------------*/
+.main__form{
+    padding: 2rem 0 2rem;
+    background-color: rgb(200, 223, 223);
+}
+
+.main__presentaContacto h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.main__presentaContacto p{
+    padding: .5rem 0 0 0;
+    font-size: 1.5rem;
+}
+
+.main__formulario{
+    margin: auto;
+    padding: 2rem 0;
+    background-color: rgb(211, 235, 235);
+}
+
+.main__f{
+    padding: 0 5rem;
+    margin: auto;
+    max-width: 700px;
+}
+
+.main__formulario--campo input{
+    width: 100%;
+}
+
+.main__formulario--interes label, select{
+    width: 100%;
+}
+
+.main__formulario--mail textarea, label, input{
+    width: 100%;
+}
+
+.main__form--boton{
+    padding: 1rem 0;
+    width: 49.5%;
+}
+
+/* ------------------------------ /VISTA CONTACTO ---------------------------------*/
+
+}
+
+@media screen and (min-width: 769px) and (max-width:1023px) {      /* ------- Tablet pequeña ------*/
+
+    /* ---------------- HEADER Y FOOTER TODAS LAS VISTAS --------------------*/ 
+        .header{
+            grid-template-columns: 100%;
+            align-items: center;
+            justify-items: center;
+            height: 25vh;
+        }
+    
+        .header__logo{
+            margin: 0;
+            padding: 2rem 0;
+            width: 8rem;
+        }
+    
+        .header__menu{
+            justify-content: center;
+            margin-right: 0rem;
+        }
+    
+        .header__item{
+            justify-self: center;
+        }
+        .header__item a{
+            padding: .3rem;    
+            font-size: 1.5rem;
+        }
+        /* --------------   FOOTER ----------------*/
+        .footer__contenedor{
+        
+            grid-template-columns: 100%;
+            grid-template-areas:"logo logo logo"
+                                "redes redes redes"
+                                "ubicacion ubicacion ubicacion";
+        }
+        .footer__logo img{
+            width: 8rem;
+            margin: 4rem 0;
+        }
+    
+        .bi{
+            width: 30px;
+            height: 30px;
+        }
+    
+        .footer__dir{
+            font-size: 1rem;
+            padding: 1rem 0 4rem;
+            text-align: center;
+        }
+    /* ---------------- HEADER Y FOOTER TODAS LAS VISTAS --------------------*/ 
+    
+    /* --------------------  HERO VISTA INDEX ------------------------------*/
+    
+    .main__contenido{
+        grid-template-areas:"hero hero hero"
+                            "nosotros nosotros nosotros"
+                            "tarjeta1 tarjeta1 tarjeta1"
+                            "tarjeta2 tarjeta2 tarjeta2"
+                            "tarjeta3 tarjeta3 tarjeta3";
+    }
+    .main__article{
+        height: 42vh;
+    }
+    .heroContenedor{
+        top: 6rem;
+        left: 5rem;
+        z-index: 100;
+    }
+    .main__article--tituloGrande{
+        font-size: 4rem;
+    
+    }
+    .main__article--bajada{
+        font-size: 2rem;
+    }
+    
+    .main__hero--boton{    
+        padding: 1rem 2rem;
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+    
+    .main__hero--boton:hover{
+        border: 1px solid rgb(76, 6, 143);
+        border-radius: 3%;
+    }
+    /*---------------------  / HERO VISTA INDEX -----------------------------*/
+    
+    /* -------------------- NOSOTROS VISTA INDEX --------------------------- */
+    .main__nosotros{
+        grid-template-columns: 100%;
+        display: block;
+        padding: 2rem 0;
+     }
+    .main__nosotros--txt{
+        width: 100%;
+        font-size: 1rem;
+        padding: 2rem 2rem;
+    }
+    
+    .main__nosotros--img{
+     width: 100%;
+     height: auto;
+    }
+    /* -------------------- / NOSOTROS VISTA INDEX --------------------------- */
+    
+    /* -------------------- TARJETAS VISTA INDEX --------------------------- */
+    .main__tarjeta1, .main__tarjeta2, .main__tarjeta3 {
+        padding: 2rem 0rem;
+    }
+    
+    .main__objetivos--tituloChico{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    .main__presenta--img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .main__tarjeta--bajada{
+        font-size: 1.3rem;
+        padding: 2rem 2rem;
+        text-align: justify;
+    } /* -------------------- / TARJETAS VISTA INDEX --------------------------- */
+
+    /*  --------------------- VISTA NOSOTROS -----------------------------------*/
+    .main__instalaciones{
+        padding: 3rem 0rem;
+    }
+    .instalaciones__contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main__instalaciones--izq{
+        width: 100%;
+        display: flex;
+        padding: 0 3rem;
+    }
+    
+    .main__instalaciones--der{
+        width: 100%;
+        display: flex;
+        padding: 0 3rem;
+    }
+    
+    .instalaciones__txt{
+        width: 100%;
+        padding: 0rem 3rem;
+    }
+    
+    .instalaciones__img{    
+        padding: 0;
+        width: 100%;
+    }
+    
+    .instalaciones__img img{
+        margin: 1rem 0;
+        width: 100%;    
+    }
+    /*  --------------------- / VISTA NOSOTROS -------------------------------- */
+
+/* ----------------------------- VISTA SECUNDARIA --------------------------------*/
+.main__presentaSecu{
+    padding: 6rem 0 0;
+}
+
+.main__presentaSecu h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    padding: 0  4rem;
+    text-align: center;
+}
+
+.main__presentaSecu p{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    text-align: justify;
+}
+
+.main__presentaSecu--img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.main__presentaSecu--img img{
+    width: 100%;
+}
+
+.main__examenesSecu{
+    padding: 4rem 0;
+}
+
+.main__examenesSecu h2{
+    
+    margin-bottom: 2rem;
+    padding: 0  0rem;
+}
+
+.main__examenesSecu p{
+    font-size: 1rem;
+    padding: 1rem 2rem 1rem;
+}
+
+.main__orientacionSecu{
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__orientacionSecu--txt{
+    width: 100%;
+}
+
+.main__orientacionSecu--img{
+    width: 100%;
+}
+
+.main__orientacionSecu--img img{
+    width: 100%;
+}
+
+.main__orientacionSecu h2{
+    text-align: center;
+    padding: 0  2rem;
+}
+
+.main__orientacionSecu p{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    text-align: justify;
+}
+
+.main__idiomasSecu{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0 0;
+    background-color: #ffe1ee;
+}
+
+.main__idiomasSecu--txt{
+    width: 100%;
+}
+
+.main__idiomasSecu--img{
+    width: 100%;
+}
+
+.main__idiomasSecu--img img{
+    width: 100%;
+}
+
+.main__idiomasSecu h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0  4rem;
+}
+
+.main__idiomasSecu p{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    
+}
+/* ------------------------------ /VISTA SECUNDARIA ------------------------------*/
+
+/* ------------------------------ VISTA COMUNIDAD --------------------------------*/
+.main__comunidad--presenta{
+    padding: 4rem 0rem;
+}
+
+.main__comunidad--presenta h1{
+    margin-bottom: 1rem;
+    padding: 0rem  0rem;
+    font-size: 2rem;
+}
+
+.main__comunidad--presenta p{
+    font-size: 1rem;
+    padding: 1.5rem 2rem;
+}
+
+.novedades__general{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 4rem 2rem;
+}
+
+.comunidad__novedad--txt{
+    width: 100%;
+    padding: 0 0rem;
+    font-size: 1rem;
+}
+.comunidad__novedad--img{
+    width: 100%;
+    padding: 0rem;
+}
+
+.comunidad__novedad--img iframe{
+    width: 100%;
+    height: 400px;
+}
+
+.comunidad__novedad--txt h3{
+    font-size: 2rem;
+    padding: 1rem0 0 0rem 0;
+    text-align: left;
+}
+.comunidad__novedad--txt p{
+    padding: 1rem 0;
+}
+/* ------------------------------ /VISTA COMUNIDAD --------------------------------*/
+
+/* ------------------------------ VISTA CONTACTO ---------------------------------*/
+.main__form{
+    padding: 2rem 0 2rem;
+    background-color: rgb(200, 223, 223);
+}
+
+.main__presentaContacto h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.main__presentaContacto p{
+    padding: .5rem 0 0 0;
+    font-size: 1.5rem;
+}
+
+.main__formulario{
+    margin: auto;
+    padding: 2rem 0;
+    background-color: rgb(211, 235, 235);
+}
+
+.main__f{
+    padding: 0 5rem;
+    margin: auto;
+    max-width: 700px;
+}
+
+.main__formulario--campo input{
+    width: 100%;
+}
+
+.main__formulario--interes label, select{
+    width: 100%;
+}
+
+.main__formulario--mail textarea, label, input{
+    width: 100%;
+}
+
+.main__form--boton{
+    padding: 1rem 0;
+    width: 49.5%;
+}
+
+/* ------------------------------ /VISTA CONTACTO ---------------------------------*/
+
+}
+
+
+/* ------------- / MEDIA QUERIES ------------------------------------------*/
